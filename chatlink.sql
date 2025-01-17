@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 17, 2025 at 04:47 PM
+-- Generation Time: Jan 17, 2025 at 04:57 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -90,13 +90,6 @@ CREATE TABLE `messages` (
   `updated_at` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-<<<<<<< HEAD
-=======
---
--- Dumping data for table `messages`
---
-
->>>>>>> 4a15e4078676db4147fa1b2f43822cdb67117fe3
 -- --------------------------------------------------------
 
 --
@@ -114,16 +107,6 @@ CREATE TABLE `posts` (
   `comments_count` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-<<<<<<< HEAD
-=======
---
--- Dumping data for table `posts`
---
-
-INSERT INTO `posts` (`post_id`, `user_id`, `image_url`, `caption`, `timestamp`, `download`, `likes_count`, `comments_count`) VALUES
-(100, 4, '../uploads/user-4/wallpaperflare.com_wallpaper__1_.jpg', 'Ghost', '2024-05-20 02:18:26', 0, 2, 0);
-
->>>>>>> 4a15e4078676db4147fa1b2f43822cdb67117fe3
 -- --------------------------------------------------------
 
 --
