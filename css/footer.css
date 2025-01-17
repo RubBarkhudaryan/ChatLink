@@ -1,0 +1,102 @@
+@import url("./global.css");
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer-col ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer {
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    padding: 35.5px 0;
+}
+
+.footer-col {
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+
+.footer-col ul li {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.footer-col ul li a {
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--footer-text);
+    display: inline-block;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+
+.footer-col ul li a:hover {
+    transform: scale(1.1);
+}
+
+.dev,
+.dev a,
+.dev p {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    text-wrap: wrap;
+    font-weight: 300;
+    color: var(--footer-text);
+}
+
+
+@media(max-width: 767px) {
+    .footer {
+        width: 100%;
+    }
+
+    .footer-col ul li a {
+        font-size: 12px;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer {
+        width: 100%;
+    }
+
+    .footer-col ul li a,
+    .dev,
+    .dev a {
+        font-size: 10px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+}

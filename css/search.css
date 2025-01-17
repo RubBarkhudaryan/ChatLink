@@ -1,0 +1,70 @@
+@import url("./global.css");
+@import url("./footer.css");
+@import url("./menu.css");
+
+.body {
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    justify-content: space-between;
+    height: inherit;
+}
+
+
+h1 {
+    color: var(--text);
+    margin: 10px;
+}
+
+.search-form {
+    margin-left: 4%;
+}
+
+#searchInput {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--input);
+    color: var(--text);
+    border: var(--border);
+}
+
+#clear {
+    display: inline-block;
+    width: 40px;
+    margin: 5px;
+    font-size: 25px;
+    background-color: var(--input);
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchResults {
+    margin-top: 20px;
+    margin-left: -15px;
+}
+
+.recomended-user a {
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.recomended-user>a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width:1200px) {
+    .search-form {
+        margin-left: 0;
+    }
+}

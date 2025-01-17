@@ -1,0 +1,411 @@
+@import url('./global.css');
+
+.body {
+    width: 100%;
+    background-color: var(--page-bg);
+}
+
+.no-post {
+    margin: auto;
+    width: 100%;
+    height: 550px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.fa-camera {
+    color: var(--text);
+    font-size: 150px;
+}
+
+.recomended-users-list {
+    position: absolute;
+    width: 250px;
+    margin: 20px;
+    left: 80%;
+    height: fit-content;
+}
+
+.recomended-users-title {
+    margin: 10px;
+    color: var(--text);
+}
+
+.recomended-user {
+    position: relative;
+    padding: 15px;
+}
+
+.recomended-user-fullname {
+    position: absolute;
+    margin: 5px 0 5px 10px;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.recomended-user-username {
+    position: absolute;
+    margin: 30px 0 5px 10px;
+    font-size: 12px;
+    color: var(--muted-text);
+}
+
+#show-recomended-users {
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--page-bg);
+    border: var(--border);
+    color: var(--text);
+    cursor: pointer;
+}
+
+figure {
+    width: 500px;
+    height: fit-content;
+    border-bottom: 2px solid silver;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.post {
+    position: relative;
+}
+
+
+.profile-small-img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.poster-username {
+    position: relative;
+    bottom: 12px;
+}
+
+.more-menu-button {
+    display: block;
+    float: right;
+    width: 90%;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;
+}
+
+.fa-ellipsis {
+    width: inherit;
+    height: 30px;
+}
+
+.more-menu-attributes {
+    position: absolute;
+    width: 40%;
+    border: 2px solid silver;
+    border-radius: 10px;
+    background-color: var(--page-bg);
+    left: 400px;
+    padding: 10px;
+    z-index: 999;
+}
+
+.more-menu-attributes ul {
+    list-style: none;
+    margin: auto;
+    width: 100%;
+}
+
+.more-menu-attributes ul li {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.more-menu-attributes ul li button,
+.edit-post {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid silver;
+    width: 95%;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.edit-post {
+    font-size: 13.3px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.5s;
+}
+
+.more-menu-attributes ul li button:hover,
+.edit-post:hover {
+    background-color: silver;
+}
+
+.follow-button,
+.block-user-button,
+.unblock-user-button {
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid silver;
+}
+
+img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+video {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.postCaption {
+    padding: 10px 10px 0 15px;
+}
+
+.buttons {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.like-container,
+.comment-buttons {
+    text-align: center;
+}
+
+.like-button {
+    display: inline-block;
+    color: red;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.comment-button {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.share-button {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-heart,
+.fa-comment-dots,
+.fa-paper-plane {
+    width: 100%;
+    height: 100%;
+}
+
+.likes-count,
+.comments-count {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--text);
+}
+
+.comment-username{
+    display: flex;
+    flex-direction: column;
+    color: silver;
+    font-size: 12px;
+}
+
+.comment-username > span{
+    color: var(--text);
+    font-size: 15px;
+}
+
+.comment-container {
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.comment-1 {
+    resize: none;
+    width: 400px;
+    height: 100px;
+    background-color: transparent;
+    overflow: auto;
+    border-radius: 10px;
+    padding: 7px;
+    border-color: silver;
+}
+
+.label {
+    display: block;
+    color: var(--text);
+}
+
+.comment-length {
+    display: inline;
+}
+
+.comment-length>input {
+    background: transparent;
+    border: transparent;
+    width: 30px;
+    font-size: inherit;
+    color: var(--text);
+}
+
+.submitComment {
+    padding: 5px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: silver;
+    transition: all 0.5s;
+}
+
+.submitComment:hover {
+    background-color: silver;
+}
+
+.error-message {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+}
+
+.comments {
+    list-style: none;
+}
+
+.comments li {
+    display: flex;
+    justify-content: space-between;
+    text-wrap: wrap;
+    margin: 7px;
+    font-size: 14px;
+}
+
+.comments li button {
+    display: inline-block;
+    padding: 2px;
+    font-size: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: silver;
+    transition: all 0.5s;
+}
+
+.comments li button:hover {
+    background-color: silver;
+}
+
+.empty-comments-bar {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.load-comments-button,
+.view-less-button {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: silver;
+    transition: all 0.5s;
+}
+
+.view-less-button {
+    display: none;
+}
+
+.load-comments-button:hover,
+.view-less-button:hover {
+    background-color: silver;
+}
+
+@media (max-width:1200px) {
+    .recomended-users-list {
+        display: none;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .recomended-users-list {
+        position: static;
+        width: 100%;
+        margin: 10px auto;
+        left: auto;
+    }
+
+    .comment-1 {
+        width: 100%;
+    }
+
+    .more-menu-attributes {
+        left: auto;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    figure {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .fa-camera {
+        font-size: 100px;
+    }
+
+
+    .buttons {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .like-button,
+    .comment-button,
+    .share-button {
+        width: 25px;
+        height: 25px;
+    }
+
+    .postCaption {
+        padding: 5px;
+    }
+
+    .comment-1 {
+        height: 80px;
+    }
+}

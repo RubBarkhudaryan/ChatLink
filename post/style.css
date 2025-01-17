@@ -1,0 +1,150 @@
+@import url("../css/global.css");
+
+body,
+.body {
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.container{
+  margin-top: 20px;
+}
+
+#canvas {
+  margin: auto;
+  background-color: var(--page-bg);
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 100%;
+  border: 2px solid silver;
+}
+
+.btn-disable {
+  color: #fff !important;
+}
+
+.btn-primary {
+  background-color: #1b2632 !important;
+}
+
+#caption {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--page-bg);
+}
+
+.my-3 {
+  color: var(--primary-text);
+}
+
+.bg-info {
+  background-color: var(--page-bg) !important;
+}
+
+
+.choose-container {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 10px;
+  width: 80%;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--page-bg);
+  color: var(--primary-text);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid silver;
+  transition: all 0.5s;
+}
+
+.return-link {
+  display: inline-block !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  font-size: medium !important;
+  color: var(--primary-text) !important;
+  transition: all 0.5s !important;
+}
+
+.return-link:hover {
+  scale: 1.03 !important;
+}
+
+.link:hover {
+  background-color: var(--primary-text);
+  color: var(--page-bg);
+}
+
+a.link-logo {
+  color: var(--primary-text);
+}
+
+.title {
+  color: var(--primary-text);
+}
+
+.upload-container,
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--page-bg);
+  color: var(--primary-text);
+  padding: 10px;
+}
+
+.form {
+  width: 350px;
+}
+
+.upload-container input {
+  margin: 5px;
+}
+
+.upload-container input[type="submit"] {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--page-bg);
+  color: var(--primary-text);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid silver;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.upload-container input[type="submit"]:hover {
+  background-color: var(--primary-text);
+  color: var(--page-bg);
+}
+
+
+#img {
+  display: none !important;
+}
+
+
+#download{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+label{
+  color: var(--primary-text);
+}

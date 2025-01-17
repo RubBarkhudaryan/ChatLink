@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "FSP DEMO - Blue Vinyl";
+    src: url("/chatlink/fonts/Fontspring-DEMO-blue_vinyl_regular_ps_ot.woff") format("woff"),
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root[data-theme="light"] {
+    --page-bg: #FFF;
+    --primary-text: #3C3A47;
+    --text: #000;
+    --footer-text: rgb(157, 157, 157);
+    --border: 2px solid rgb(192, 192, 192);
+    --form-bg: rgb(155, 149, 149);
+}
+
+:root[data-theme="dark"] {
+    --page-bg: #3C3A47;
+    --primary-text: #FFF;
+    --text: #FFF;
+    --footer-text: rgb(157, 157, 157);
+    --form-bg: rgb(155, 149, 149);
+}
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--page-bg);
+    color: var(--text);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--text);
+    transition: 0.5s all;
+}
+
+ul {
+    color: var(--text);
+    list-style: none;
+    margin: 10px;
+}
+
+ol {
+    color: var(--text);
+    margin: 15px 15px 15px 20px;
+}
+
+h2 {
+    color: var(--text);
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+h1,
+h3,
+h4 {
+    color: var(--text);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.list-line>li>p {
+    margin-top: 10px;
+}
+
+.lister>li {
+    margin-top: 35px;
+}
+
+pre,
+p {
+    color: var(--text);
+}
+
+pre a,
+p a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+pre a :hover,
+p a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(192, 192, 192, 0.6);
+}
+
+.logo-box a {
+    font-family: "FSP DEMO - Blue Vinyl";
+    font-size: 50px;
+    color: var(--text);
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    height: fit-content;
+    background-color: var(--page-bg);
+}
+
+section {
+    width: 95%;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--page-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+footer a,
+pre a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+footer a:hover,
+pre a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    background: var(--form-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    background-color: var(--page-bg);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.location {
+    margin-bottom: 40px;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+
+    header,
+    footer {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+}
